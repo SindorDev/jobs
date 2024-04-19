@@ -1,0 +1,126 @@
+@font-face {
+     font-family: "Source Sans Pro";
+     src: url(./fonts/Source\ Sans\ Pro.woff2);
+}
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+body {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 100vh;
+     background-color: #edede9;
+}
+a {
+     text-decoration: none;
+}
+.container {
+     max-width: 1110px;
+     margin: 0 auto;
+     box-sizing: content-box;
+     padding: 0 24px;
+}
+.jobs-wrapper {
+     text-align: center;
+}
+.jobs-wrapper h1 {
+     font-family: Source Sans Pro;
+     font-size: 40px;
+     font-weight: 700;
+     line-height: 60px;
+     color: #122118;
+}
+.jobs-wrapper h1 > span {
+     color: #2FCD70;
+}
+.jobs-wrapper > p {
+     font-family: Source Sans Pro;
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 35px;
+     color: #02020280;
+     margin-top: 30px;
+}
+.jobs-cards {
+     margin-top: 50px;
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     justify-content: space-between;
+     gap: 30px;
+}
+.jobs-card {
+     padding: 30px;
+     box-shadow: 0px 10px 100px 0px #0000000A;
+}
+.jobs-card-header {
+     display: flex;
+     align-items: flex-start;
+     justify-content: space-between;
+}
+.card-header-left-content {
+     display: flex;
+     align-items: flex-start;
+     gap: 20px;
+}
+.left-content-text {
+     font-family: Source Sans Pro;
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 20.11px;
+     text-align: left;
+     color: #02020280;
+}
+.left-content-title {
+     font-family: Source Sans Pro;
+     font-size: 20px;
+     font-weight: 700;
+     line-height: 25.14px;
+     text-align: left;
+     color: #020202;
+     margin: 5px 0;
+}
+
+.jobs-card-content > p {
+     font-family: Source Sans Pro;
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 35px;
+     text-align: left;
+     color: #02020280;
+     margin: 20px 0;
+}
+.jobs-card-footer {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+.footer-left-link {
+     display: flex;
+     align-items: center;
+     gap: 5px;
+     font-family: Source Sans Pro;
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 20.11px;
+     text-align: left;
+     color: #2FCD70;
+}
+.footer-right {
+     display: flex;
+     align-items: center;
+}
+
+
+@media only screen and (max-width: 968px) {
+     .jobs-cards {
+           grid-template-columns: repeat(2, 1fr);
+     }
+}
+@media only screen and (max-width:690px) {
+     .jobs-cards {
+           grid-template-columns: repeat(1, 1fr);
+     }
+}
